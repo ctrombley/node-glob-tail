@@ -1,8 +1,9 @@
 {
   "name": "glob-tail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "readme": "README.md",
   "scripts": {
     "test": "jasmine-node spec/"
   },

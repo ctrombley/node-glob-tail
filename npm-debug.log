@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   'C:\\Users\\ctrombley\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '--registry',
+1 verbose cli   'http://registry.npmjs.org' ]
+2 info using npm@2.13.0
+3 info using node@v0.10.28
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\temp\\glob-tail',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\ctrombley\AppData\Roaming\npm-cache\glob-tail\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\ctrombley\\AppData\\Roaming\\npm-cache\\glob-tail\\1.0.0\\package.tgz',
+9 verbose tar pack   'C:\\temp\\glob-tail' ]
+10 verbose tarball C:\Users\ctrombley\AppData\Roaming\npm-cache\glob-tail\1.0.0\package.tgz
+11 verbose folder C:\temp\glob-tail
+12 info prepublish glob-tail@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\ctrombley\AppData\Roaming\npm-cache\glob-tail\1.0.0\package.tgz
+14 silly cache afterAdd glob-tail@1.0.0
+15 verbose afterAdd C:\Users\ctrombley\AppData\Roaming\npm-cache\glob-tail\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\ctrombley\AppData\Roaming\npm-cache\glob-tail\1.0.0\package\package.json written
+17 silly publish { name: 'glob-tail',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'README.md',
+17 silly publish   main: 'index.js',
+17 silly publish   readme: 'README.md',
+17 silly publish   scripts: { test: 'jasmine-node spec/' },
+17 silly publish   author: { name: 'Chris Trombley' },
+17 silly publish   license: 'ISC',
+17 silly publish   dependencies: { 'fs-backwards-stream': '0.0.0', glob: '^5.0.14', q: '^1.4.1' },
+17 silly publish   devDependencies: { 'jasmine-node': '^1.14.5' },
+17 silly publish   gitHead: '00a288372c73fe61c4291b63abcf4a3b97d70aef',
+17 silly publish   _id: 'glob-tail@1.0.0',
+17 silly publish   _shasum: 'a8ce06e2221a8cd7af2ab7134a5220b33a1d70ad',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name glob-tail
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry http://registry.npmjs.org/
+22 silly mapToRegistry uri http://registry.npmjs.org/glob-tail
+23 verbose publish registryBase http://registry.npmjs.org/
+24 silly publish uploading C:\Users\ctrombley\AppData\Roaming\npm-cache\glob-tail\1.0.0\package.tgz
+25 verbose request uri http://registry.npmjs.org/glob-tail
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 15:05:28
+28 verbose request using bearer token for auth
+29 verbose request id 8185f64528347100
+30 http request PUT http://registry.npmjs.org/glob-tail
+31 http 403 http://registry.npmjs.org/glob-tail
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '128',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Mon, 27 Jul 2015 22:05:30 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lax1428-LAX',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1438034728.542490,VS0,VE1618' }
+33 verbose request invalidating C:\Users\ctrombley\AppData\Roaming\npm-cache\registry.npmjs.org\glob-tail on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : glob-tail
+35 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\ctrombley\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:247:14)
+35 verbose stack     at Request._callback (C:\Users\ctrombley\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:170:14)
+35 verbose stack     at Request.self.callback (C:\Users\ctrombley\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:197:22)
+35 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+35 verbose stack     at Request.<anonymous> (C:\Users\ctrombley\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1050:14)
+35 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+35 verbose stack     at IncomingMessage.<anonymous> (C:\Users\ctrombley\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:996:12)
+35 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+35 verbose stack     at _stream_readable.js:919:16
+35 verbose stack     at process._tickCallback (node.js:419:13)
+36 verbose statusCode 403
+37 verbose pkgid glob-tail
+38 verbose cwd C:\temp\glob-tail
+39 error Windows_NT 6.1.7601
+40 error argv "node" "C:\\Users\\ctrombley\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish" "--registry" "http://registry.npmjs.org"
+41 error node v0.10.28
+42 error npm  v2.13.0
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : glob-tail
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
