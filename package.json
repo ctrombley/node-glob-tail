@@ -1,0 +1,19 @@
+{
+  "name": "glob-tail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec/"
+  },
+  "author": "Chris Trombley",
+  "license": "ISC",
+  "dependencies": {
+    "fs-backwards-stream": "0.0.0",
+    "glob": "^5.0.14",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
